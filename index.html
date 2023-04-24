@@ -95,19 +95,19 @@
 
       100% {
         opacity: 1;
-        transform: scale(1) translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1);
       }
     }
 
     @keyframes hideAnim {
       0% {
-        transform: scale(1) translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1);
         opacity: 1;
       }
 
       100% {
         opacity: 0;
-        transform: scale(0.8) translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(0.8);
       }
     }
 
@@ -161,39 +161,38 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      transform-origin: 50% 50%;
+      transform-style: flat;
       animation: hands3D 4s forwards;
       max-width: 100%;
       height: unset;
     }
 
     .layer1 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% - 40px), -50%);
+      transform: translate(calc(-50% - 40px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     .layer2 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% - 40px), -50%);
+      transform: translate(calc(-50% - 40px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     .layer3 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% - 20px), -50%);
+      transform: translate(calc(-50% - 20px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     .layer4 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% + 10px), -50%);
+      transform: translate(calc(-50% + 10px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     .layer5 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% + 20px), -50%);
+      transform: translate(calc(-50% + 20px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     .layer6 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% + 40px), -50%);
+      transform: translate(calc(-50% + 40px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     .layer7 {
-      transform: scale(1.1) rotateY(-25deg) translate(calc(-50% + 60px), -50%);
+      transform: translate(calc(-50% + 60px), -50%) scale(1.1) rotateY(-25deg);
     }
 
     @keyframes hands3D {
