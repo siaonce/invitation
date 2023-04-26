@@ -157,48 +157,50 @@
       height: 100%;
       width: 100%;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .hands3Dcontainer img {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      animation: hands3D 4s 1s forwards;
+      transform-style: preserve-3d;
+      animation: hands3D 4s forwards;
       max-width: 100%;
       height: unset;
     }
 
     .layer1 {
-      transform: translate(calc(-50% - 40px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(-40px, 0) scale(1.1) rotateY(-25deg);
     }
 
     .layer2 {
-      transform: translate(calc(-50% - 40px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(-40px, 0) scale(1.1) rotateY(-25deg);
     }
 
     .layer3 {
-      transform: translate(calc(-50% - 20px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(-20px, 0) scale(1.1) rotateY(-25deg);
     }
 
     .layer4 {
-      transform: translate(calc(-50% + 10px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(10px, 0) scale(1.1) rotateY(-25deg);
     }
 
     .layer5 {
-      transform: translate(calc(-50% + 20px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(20px, 0) scale(1.1) rotateY(-25deg);
     }
 
     .layer6 {
-      transform: translate(calc(-50% + 40px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(40px, 0) scale(1.1) rotateY(-25deg);
     }
 
     .layer7 {
-      transform: translate(calc(-50% + 60px), -50%) scale(1.1) rotateY(-25deg);
+      transform: translate(60px, 0) scale(1.1) rotateY(-25deg);
     }
 
     @keyframes hands3D {
       100% {
-        transform: translate(-50%, -50%) scale(1) rotateY(0deg);
+        transform: translate(0, 0) scale(1) rotateY(0deg);
       }
     }
 
